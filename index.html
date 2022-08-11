@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Management Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,500;0,900;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+    <a href="#" class="logo"><img src="1-removebg-preview.png"></a>
+    <header>
+        <!-- <div class="navbar"> -->
+        <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+        <ul class="navlist">
+            <li><a href="#" class="top-btn1">Home</a></li>
+            <li><a href="#about" class="top-btn2">About</a></li>
+            <li><a href="#services" class="top-btn3">Services</a></li>
+            <li><a href="https://www.theguardian.com/technology/2008/mar/09/blogs" target="_blank" class="top-btn4">Blogs</a></li>
+            <li><a href="#contact" class="top-btn5">Contact</a></li>
+        </ul>
+        
+    </div>
+        <!-- <a href="Manik.pdf"target="_blank" class="top-btn">Download CV</a> -->
+    </header>
+<section class="home" id="about">
+     <div class="home-text">
+        <h2>Hello</h2>
+        <h3>This is the Person Management Website</h3>
+        <h4>You can get any information about the persons below by clicking on the button. </h4>
+     </div>
+
+
+     <div class="buttons" id="buttons">
+     <a href="#" class="bot-btn1" onclick="getData(1)">Person 1</a>
+     <a href="#" class="bot-btn2" onclick="getData(2)">Person 2</a>
+     <a href="#" class="bot-btn3" onclick="getData(3)">Person 3</a>
+     <a href="#" class="bot-btn4" onclick="getData(4)">Person 4</a>
+     <a href="#" class="bot-btn5" onclick="getData(5)">Person 5</a>
+     <a href="#" class="bot-btn6" onclick="getData(6)">Person 6</a>
+     <a href="#" class="bot-btn7" onclick="getData(7)">Person 7</a>
+     <a href="#" class="bot-btn8" onclick="getData(8)">Person 8</a>
+     <a href="#" class="bot-btn9" onclick="getData(9)">Person 9</a>
+     <a href="#" class="bot-btn10" onclick="getData(10)">Person 10</a>
+     </div>
+    
+     <div class="para">
+        <div class="close">X</div>
+        <div class="details">
+             
+             Name: <span id="name"></span><br>
+             Email: <span id="email"></span><br>
+             Address: <span id="address"></span><br>
+             <!-- Street: <span id="street"></span><br>  -->
+             
+
+             Phone: <span id="phone"></span><br>
+             Website: <span id="website"></span><br>
+             Company: <span id="company"></span><br>
+            
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        document.querySelector('.close').addEventListener("click", function () {
+        document.querySelector('.para').style.display = "none";
+        document.querySelector('.buttons').style.display = "block";
+    
+    });
+    
+    </script>
+</section>        
+    
